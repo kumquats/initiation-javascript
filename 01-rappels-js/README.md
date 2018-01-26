@@ -22,7 +22,7 @@ Ce TP sera aussi l'occasion de manipuler les outils de debug du navigateur (devt
 	```
 1. **Afficher le lien et l'image ainsi générés dans la page html** à l'aide de la méthode `querySelector` et de la propriété `innerHTML` :
 	```js
-	document.querySelector('.container').innerHTML = html;
+	document.querySelector('.videosContainer').innerHTML = html;
 	```
 
 ### Manipulation des tableaux et objets
