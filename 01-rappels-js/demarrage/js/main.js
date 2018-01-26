@@ -17,3 +17,5 @@ var videos = [
 		video: 'videos/catfails.mp4'
 	}
 ];
+
+console.log('youpi');
