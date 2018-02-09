@@ -46,7 +46,17 @@
 
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script type="text/babel" src="js/main.js"></script>
-	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<script src="js/system.js"></script>
+	<script>
+		SystemJS.config({
+			map: {
+				'plugin-babel': './js/plugin-babel/plugin-babel.js',
+				'systemjs-babel-build': './js/plugin-babel/systemjs-babel-browser.js'
+			},
+			transpiler: 'plugin-babel'
+		});
+		SystemJS.import('./js/main.js');
+	</script>
+
 </body>
 </html>

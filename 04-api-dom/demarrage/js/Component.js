@@ -1,15 +1,16 @@
 export default class Component {
-	tag;
-	children;
+	tag/*:string*/;
+	children/*:Array<mixed>*/;
+  	attributes/*:{}*/;
 
-	constructor(tag = 'div', children=[], attributes={}){
+	constructor(tag/*:string*/ = 'div', children/*:Array<mixed>*/=[], attributes/*:{}*/={}){
 		this.tag = tag;
 		this.children = children;
 		this.attributes = attributes;
 	}
 
-	render(){
-		let html = `<${this.tag} ${this.renderAttributes()}`;
+	render()/*:string*/{
+		let html/*:string*/ = `<${this.tag} ${this.renderAttributes()}`;
 		if ( this.children.length ){
 			html += `>
 				${this.renderChildren()}
@@ -20,7 +21,7 @@ export default class Component {
 		return html;
 	}
 
-	renderChildren(){
+	renderChildren()/*:string*/{
 		return this.children.map( child =>
 			child instanceof Component ?
 			child.render() :
@@ -28,8 +29,8 @@ export default class Component {
 		).join('');
 	}
 
-	renderAttributes(){
-		const attributesHtml = [];
+	renderAttributes()/*:string*/{
+		const attributesHtml/*:Array<string>*/ = [];
 		for ( let attribute in this.attributes ){
 			attributesHtml.push( `${attribute}="${this.attributes[attribute]}"` );
 		}
