@@ -37,6 +37,7 @@ document.querySelector('.videosContainer').innerHTML = videosHtml.join('');
 class Component {
 	tag;
 	children;
+	attributes;
 
 	constructor(tag = 'div', children=[], attributes={}){
 		this.tag = tag;
@@ -53,7 +54,6 @@ class Component {
 		} else {
 			html += '/>';
 		}
-		console.log(html);
 		return html;
 	}
 
