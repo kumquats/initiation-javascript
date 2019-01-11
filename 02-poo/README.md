@@ -24,10 +24,9 @@ NB : Pour coder en ES6 et bénéficier d'un support sur tous les navigateurs nou
 		- un Array nommé `children` et stocké en variable membre `this.children`
 	+ la classe dispose d'une méthode `render()` qui retourne une chaîne de caractères correspondant à une balise dont le type correspond à l'attribut `tag` passé dans le constructeur. ex: si `tag` vaut "div" alors on générera une chaîne `<div></div>`. à l'intérieur de la balise on insérera le résultat de l'appel à la méthode `renderChildren` (cf. ci-dessous)
 	+ la méthode `renderChildren` retourne une chaîne de caractère dont le résultat dépend du contenu du tableau `children`. La méthode parcourt tous les `children` et ajoute le rendu de l'enfant à la valeur retournée. Pour chaque enfant la méthode teste :
-		- si l'enfant est lui même une instance de Component, elle retourne un le résultat de l'appel à la méthode `render` du Component. Utiliser pour cela l'opérateur `instanceof` cf. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+		- si l'enfant est lui même une instance de Component, elle retourne dans ce cas le résultat de l'appel à la méthode `render` du Component enfant. Utiliser pour cela l'opérateur `instanceof` cf. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
 		- si l'enfant est une chaîne de caractères, la chaîne est ajoutée telle qu'elle dans le résultat retourné
 	si le tableau children est vide, on retourne une chaîne vide
-		- sinon soit le résultat de l'appel à la fonction render de chaque Component enfant
 1. Instancier un Component de type `h1` avec comme enfant juste un texte `"JSTube"` et afficher le résultat de l'appel à la méthode `render()` dans la page html.
 1. Créer une classe `VideoThumbnail` qui hérite de la classe `Component` :
 	+ le constructeur prend en paramètre un objet nommé `video` dont le format correspond à celui d'un élément du tableau `videos`(cad. propriétés title, thumbnail, video)
