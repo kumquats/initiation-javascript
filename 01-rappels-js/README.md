@@ -17,7 +17,7 @@ Vous pouvez consulter le support navigateur des différentes fonctionnalités Ec
 
 Par exemple si vous souhaitez utiliser les déclarations de propriétés dans le corps de la classe ([_"public instance class fields"_](http://kangax.github.io/compat-table/esnext/#test-instance_class_fields_public_instance_class_fields)) ou les propriétés privées ([_"private instance class fields basic support"_](http://kangax.github.io/compat-table/esnext/#test-instance_class_fields_private_instance_class_fields_basic_support)) : il vous faudra Chrome 66 minimum et activer le flag harmony : http://kangax.github.io/compat-table/esnext/#chrome-harmony-note
 
-**\*NB : Dans la vraie vie cette question est tranchée facilement par l'utilisation du compilateur [Babel](https://babeljs.io)** : vous codez les fonctionnalités ES6+ que vous souhaitez sans vous soucier du support navigateur, et le compilateur se charge de transformer tout votre code en ES5, compatible donc avec tous les navigateurs. <br>Dans ce court TP nous n'utiliserons pas Babel afin de gagner un peu de temps et concentrer notre travail sur le code, sachez juste que lorsque vous travaillerez sur de vrais projets c'est Babel qu'il faudra utiliser (et [Webpack](https://webpack.js.org/) pour la gestion des modules) !\*
+**NB : Dans la vraie vie cette question est tranchée facilement par l'utilisation du compilateur [Babel](https://babeljs.io)** : vous codez les fonctionnalités ES6+ que vous souhaitez sans vous soucier du support navigateur, et le compilateur se charge de transformer tout votre code en ES5, compatible donc avec tous les navigateurs. <br>Dans ce court TP nous n'utiliserons pas Babel afin de gagner un peu de temps et concentrer notre travail sur le code, sachez juste que lorsque vous travaillerez sur de vrais projets c'est Babel qu'il faudra utiliser (et [Webpack](https://webpack.js.org/) pour la gestion des modules) !\*
 
 ## Préparatifs
 
@@ -67,7 +67,7 @@ Pour chaque vignette on aura :
 Le code obtenu devra être de ce type :
 ```html
 <li class="media">
-    <img src="images/catlaugh.jpg" width="246px" height="138px" />
+    <img src="images/catlaugh.jpg" width="246" height="138" />
     <h4>CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation</h4>
 </li>
 ```
