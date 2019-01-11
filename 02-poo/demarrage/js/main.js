@@ -18,4 +18,20 @@ const videos = [
 	}
 ];
 
-console.log('youpi');
+// Manipulation des chaînes
+let html = `images/${file}`;
+html = `<a href="${html}">
+		<img src="${html}" />
+	</a>`;
+document.querySelector('.videosContainer').innerHTML = html;
+
+// Manipulation des tableaux et objets
+const videosHtml = videos.map( function(video){
+	return `<li class="media">
+		<a href="images/${video.thumbnail}">
+			<img src="images/${video.thumbnail}" width="246" height="138"/>
+			<h4>${video.title}</h4>
+		</a>
+	</li>`;
+});
+document.querySelector('.videosContainer').innerHTML = videosHtml.join('');
