@@ -1,6 +1,6 @@
-var file = 'catlaugh.jpg';
+const file = 'catlaugh.jpg';
 
-var videos = [
+const videos = [
 	{
 		title: 'CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation',
 		thumbnail: 'catlaugh.jpg',
@@ -19,17 +19,3 @@ var videos = [
 ];
 
 console.log('youpi');
-
-var html = 'images/'+file;
-html = '<a href="'+html+'">\
-		<img src="'+html+'" />\
-	</a>';
-document.querySelector('.videosContainer').innerHTML = html;
-
-var videosHtml = videos.map( function(video){
-	return '<a href="images/'+video.thumbnail+'">\
-		<img src="images/'+video.thumbnail+'" />\
-		<h2>'+video.title+'</h2>\
-	</a>';
-});
-document.querySelector('.videosContainer').innerHTML = videosHtml.join('');
