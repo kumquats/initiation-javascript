@@ -1,6 +1,6 @@
-var file = 'catlaugh.jpg';
+const file = 'catlaugh.jpg';
 
-var videos = [
+const videos = [
 	{
 		title: 'CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation',
 		thumbnail: 'catlaugh.jpg',
