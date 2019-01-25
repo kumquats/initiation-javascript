@@ -51,7 +51,7 @@ Tapez dans un terminal les instructions suivantes :
 
 7. **Une fois que le main.js est traité, passez aux autres fichiers du projet : typez les propriétés, les méthodes et leurs paramètres, les variables contenues dans chaque classe JS.**
 
-8. **Une fois que le message 'No errors!' enfin, vous remarquerez que votre code ne fonctionne plus dans le navigateur : les annotations flow, ne sont pas comprises par les navigateurs car rappelons qu'il ne s'agit pas d'une syntaxe EcmaScript officielle.** Pour régler le problème, on doit normalement installer [Babel](https://babeljs.io). Pour gagner du temps, on va simplement commenter les informations de typage de cette manière :
+8. **Une fois que le message 'No errors!' apparaît enfin, vous remarquerez que votre code ne fonctionne plus dans le navigateur : les annotations flow, ne sont pas comprises par les navigateurs car rappelons qu'il ne s'agit pas d'une syntaxe EcmaScript officielle.** Pour régler le problème, on doit normalement installer [Babel](https://babeljs.io). Pour gagner du temps, on va simplement commenter les informations de typage de cette manière :
 
 	Au lieu d'écrire :
 	```js
@@ -77,11 +77,11 @@ La manipulation est un peu fastidieuse lorsque, comme nous, on travaille avec pl
 	- il faut enlever les instructions `import ....` et `export ...`
 	- il faut copier les fichiers dans le bon ordre en fonction des dépendances de chaque fichier
 
-	Une fois que le message 'No errors!' apparaît, vous pouvez passer à la suite !
+	Une fois que le message 'No errors!' apparaît, vous pouvez passer à la suite ! Mais je vous recommande de coder directement dans le testeur en ligne (une fois que vous aurez un code qui fonctionne, vous pourrez le réintégrer dans vos fichiers .js).
 
 1. **Une fois que le main.js est traité, passez aux autres fichiers du projet : typez les propriétés, les méthodes et leurs paramètres, les variables contenues dans chaque classe JS.**
 
-2. **Une fois que le message 'No errors!' enfin, vous remarquerez que votre code ne fonctionne plus dans le navigateur : les annotations flow, ne sont pas comprises par les navigateurs car rappelons qu'il ne s'agit pas d'une syntaxe EcmaScript officielle.** Pour régler le problème, on doit normalement installer [Babel](https://babeljs.io). Pour gagner du temps, on va simplement commenter les informations de typage de cette manière :
+2. **Une fois que le message 'No errors!' apparaît enfin, vous remarquerez que votre code ne fonctionne plus dans le navigateur : les annotations flow, ne sont pas comprises par les navigateurs car rappelons qu'il ne s'agit pas d'une syntaxe EcmaScript officielle.** Pour régler le problème, on doit normalement installer [Babel](https://babeljs.io). Pour gagner du temps, on va simplement commenter les informations de typage de cette manière :
 
 	Au lieu d'écrire :
 	```js
