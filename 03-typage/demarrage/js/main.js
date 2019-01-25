@@ -3,7 +3,7 @@ import Component from './Component.js';
 import videos from './videos.js';
 
 // 2. Pour tester le bon fonctionnement de la classe, instancier un Component de type `h1`
-const title = new Component('h1', {}, ['Liste des vidéos']);
+const title = new Component('h1', null, ['Liste des vidéos']);
 document.querySelector('.pageTitle').innerHTML = title.render();
 
 // 9. dans le main.js, modifier le parcours du tableau `videos` pour utiliser la classe `VideoThumbnail` afin de rendre les vignettes de la liste.
