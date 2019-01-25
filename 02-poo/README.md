@@ -1,4 +1,4 @@
-# TP 1 - ES6
+# TP 2 - POO
 
 ## Objectifs
 Utiliser la POO en JS et notamment les notions d'héritage.
