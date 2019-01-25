@@ -1,0 +1,22 @@
+{
+  "name": "jstube",
+  "version": "1.0.0",
+  "description": "Awesome video app",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kumquats/initiation-javascript.git"
+  },
+  "author": "Thomas Fritsch <tf@kumquats.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kumquats/initiation-javascript/issues"
+  },
+  "homepage": "https://github.com/kumquats/initiation-javascript#readme",
+  "devDependencies": {
+    "flow-bin": "^0.91.0"
+  }
+}

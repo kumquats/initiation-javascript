@@ -1,4 +1,5 @@
-const videos = [
+// @flow
+const videos/*:Array<{title:string, thumbnail:string, video:string}>*/ = [
 	{
 		title: 'CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation',
 		thumbnail: 'catlaugh.jpg',
