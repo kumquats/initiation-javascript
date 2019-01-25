@@ -29,7 +29,7 @@ Tapez dans un terminal les instructions suivantes :
 
 	A la fin du questionnaire vous verrez qu'un fichier package.json a été créé. Celui-ci est important car c'est dans ce fichier que sont enregistrées toutes les dépendances de votre projet (les librairies js que vous allez installer, comme flow par exemple). Dans la vraie vie, il s'agit d'un fichier que l'on versionne car il permet à n'importe qui d'installer automatiquement toutes les dépendances de votre projet sans avoir besoin de les lister une à une grâce à la commande `npm install`.
 
-3. **Installez Flow (attention, cette commande -comme les prochaines- est à lancer dans votre dossier de travail, là où se trouve les fichiers index.html et package.json) :**
+3. **Installez Flow (attention, cette commande -comme les prochaines- est toujours à lancer dans votre dossier de travail, là où se trouvent les fichiers index.html et package.json) :**
 	```bash
 	npm install --save-dev flow-bin
 	```
